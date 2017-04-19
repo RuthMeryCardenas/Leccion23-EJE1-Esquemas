@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  background-color: yellow;
-}
-
 .cube-center{
   margin-left: auto;
   margin-right: auto;
@@ -16,7 +12,8 @@ body {
     position: absolute;
 }
 
-.cube-1{
+/*Cubos Grandes*/
+.cube-big{
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -24,39 +21,41 @@ body {
   height: 300px;
 }
 
-.cube-2 {
+.cube-big:nth-child(1){
+  background-color: red;
+}
+
+.cube-big:nth-child(2){
+  background-color: blue;
+}
+
+/*Cubos Medianos*/
+.cube-medium {
   top: 75px;
   left: 75px;
   width: 150px;
   height: 150px;
 }
 
-.cube-3 {
+.cube-big:nth-child(1) :nth-child(1){
+  background-color: purple;
+}
+
+.cube-big:nth-child(2) :nth-child(1){
+  background-color: green;
+}
+
+/*Cubos Pequeños*/
+.cube-small {
   width: 75px;
   height: 75px;
 }
 
-.cube-1:nth-child(1){
-  background-color: red;
-}
-
-.cube-1:nth-child(2){
-  background-color: blue;
-}
-
-.cube-1:nth-child(1) :nth-child(1){
-  background-color: purple;
-}
-
-.cube-1:nth-child(1) :nth-child(2){
+.cube-big:nth-child(1) :nth-child(2){
   background-color: black;
 }
 
-.cube-1:nth-child(2) :nth-child(1){
-  background-color: green;
-}
-
-.cube-1:nth-child(2) :nth-child(2){
+.cube-big:nth-child(2) :nth-child(2){
   top: 75px;
   left: 75px;
   background-color: yellow;
