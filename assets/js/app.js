@@ -1,6 +1,5 @@
 //VARIABLES GLOBALES
   var container = document.getElementById('container');
-  printCubes(2, container);
 
 //FUNCIONES
 function createCube (parent, classList) {
@@ -11,7 +10,6 @@ function createCube (parent, classList) {
   parent.appendChild(cube);
   return cube;
 }
-
 function printCubes(numberCubes, container) {
   for (var i = 0; i < numberCubes; i++) {
     var cube = createCube (container, ["cube-big", "cube-center"]);
@@ -19,3 +17,6 @@ function printCubes(numberCubes, container) {
     createCube (cube, ["cube-small", "cube-absolute"]);
   }
 }
+
+//Imprimir 2 cubos
+  printCubes(2, container);
